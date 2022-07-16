@@ -8,3 +8,7 @@ has_children: true
 # AWS Fundamentals
 
 List of topics for AWS Fundamentals
+
+## Where is the Cloud
+
+## Elasticity

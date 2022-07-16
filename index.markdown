@@ -18,6 +18,7 @@ Collection of study notes for AWS Associate Level Certification
   {: .text-delta }
 
 - [Fundamentals](docs/fundamentals)
+- [Compute](docs/compute)
 - [Markdown Template](docs/template)
 
 </details>
