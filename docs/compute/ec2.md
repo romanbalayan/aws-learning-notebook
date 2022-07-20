@@ -6,19 +6,12 @@ nav_order: 1
 ---
 
 # EC2
-
-- Amazon Elastic Cloud Compute
-
-## Subset
-
-- Virtual Machines - EC2
-- Virtual Drives - EBS
-- Distributing Load - ELB
-- Scaling Services - ASG
+Amazon Elastic Cloud Compute
+- Virtual servers in the cloud
+- Secure and resizable compute capacity for virtually any workload
 
 ## Configuration
-
-- Operating System: Linuz, Windows, or MacOS
+- Operating System: Linux, Windows, or MacOS
   - Amazon Machine Image (AMIs)
 - Instance Type (more info for AWS Solutions Architect)
 - Compute power and Cores (CPU)
@@ -31,12 +24,10 @@ nav_order: 1
 - Bootstrap Script
 
 ## EC2 User Data
-
 - Script ran at first instance boot (only ran once, on first launch)
 - Script is executed as root user (no need for sudo)
 
 ## Instance Types
-
 - Reference: [http://aws.com/ec2/instance-types](http://aws.com/ec2/instance-types)
 - Naming Convention: m5.2xlarge
 - m: instance class
@@ -65,12 +56,32 @@ nav_order: 1
   - Locked region, instance type, OS, and tenancy
 1. Spot Instance - Cheapest Option - but unreliable - can lose instance when instance price goes above bid price
 
-
 Tenancy
 1. Dedicated Instance - reserve an instance hardware. Ensures hardware is not shared with other users. On restart, may change to a different hardware, but with the same assurance that instance is not shared.
 1. Dedicated Host - reserve an entire physical server - when control of instance placement is required
-
 1. Capacity Reservation??
+
+
+## AMI
+- Amazon Machine Image
+- Customization of EC2 Instance 
+  - include os, software configuration, monitoring, etc
+  - faster boot time (for example, vs placing all the configuration from EC2 User Data)
+- Sources
+  - Public AMI: AWS Provided
+  - Own AMI: Self made and maintained
+  - AMI Marketplace: pre-made (or sold) by other parties
+
+- Own AMI
+  - Can create an image from an existing EC2 instance
+
+## EC2 Instance Store
+- High-performance hardware disk (vs EBS network drive)
+- Physical hardware disk attached to Ec2 Instance
+  - if network latency is not acceptable
+- But, storage is ephemeral. Data is lost if instance is **stopped** (not just terminated!)
+- Meaning, not for long term storage
+- Instance types with instance store are i3 instances (Storage optimized) 
 
 ## Info Dump
 - Instance metadata: 169.254.169.254/latest/meta-data/
@@ -83,5 +94,4 @@ Tenancy
 - EC2 Instance Connect - web-browser based ssh connection to EC2 Instance on AWS Console. But only works with Amazon Linux 2 Image
 
 ## Gatchas
-
 - By default, EBS volume attached on an EC2 instance is deleted on termination

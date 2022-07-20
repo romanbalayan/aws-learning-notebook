@@ -6,5 +6,4 @@ has_children: true
 ---
 
 # AWS Compute
-
 List of topics for AWS Compute

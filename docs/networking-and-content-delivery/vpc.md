@@ -1,13 +1,12 @@
 ---
 layout: default
 title: VPC
-parent: Fundamentals
-nav_order: 2
+parent: Networking and Content Delivery
+nav_order: 1
 ---
 
 # VPC
-
-- Amazon Virtual Private Cloud
+Amazon Virtual Private Cloud
 - Logically isolated virtual network inside of AWS Cloud
 
 ## Components
@@ -15,7 +14,6 @@ nav_order: 2
 - Subnet
 - Internet Gateway
 - NAT Gateway
-
 
 ## Security Group
 - Control how traffic is allowed in or out of EC2 Instances

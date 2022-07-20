@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Global Network
+title: AWS Global Network
 parent: Fundamentals
-nav_order: 1
+nav_order: 2
 ---
 
-# Global Network
+# AWS Global Network

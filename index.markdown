@@ -19,6 +19,11 @@ Collection of study notes for AWS Associate Level Certification
 
 - [Fundamentals](docs/fundamentals)
 - [Compute](docs/compute)
+- [Storage](docs/storage)
+- [Networking and Content Delivery](docs/networking-and-content-delivery)
+- [Security, Identity, and Compliance](docs/security-identify-and-compliance)
+- [Developer Tools](docs/developer-tools)
+- [Others](docs/others)
 - [Markdown Template](docs/template)
 
 </details>
