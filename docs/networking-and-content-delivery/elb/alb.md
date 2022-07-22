@@ -42,3 +42,7 @@ nav_order: 2
     - port: X-Forwarded-Port, protocol: X-Forwarded-Proto
     - this is due to connection termination at ALB level
 - access control using security groups
+
+- Authenticate Users using ALB
+  - can be configured to securely authenticate users, to offload from application.
+  - support authentication using User Pools supported by Amazon Cognito
